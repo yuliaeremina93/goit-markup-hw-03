@@ -29,6 +29,16 @@ img {
   display: block;
   max-width: 100%;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
 .container {
   width: 1200px;
   padding-left: 20px;
@@ -131,6 +141,8 @@ img {
 /* -------------FOOTER----------- */
 .footer-style {
   background-color: var(--background-color);
+  border-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-logo {
   padding-top: 60px;
@@ -253,7 +265,7 @@ img {
 
 .our-team-item {
   flex-basis: calc(100% / 4 - 30px);
-
+  /* width: 25%; */
   background-color: white;
   border-radius: 0px 0px 4px 4px;
 }
