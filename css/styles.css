@@ -3,6 +3,7 @@
   --title-color: #212121;
   --accent-color: #2196f3;
   --background-color: #2f303a;
+  --border-color: 1px solid #ececec;
 }
 
 body {
@@ -30,8 +31,8 @@ img {
 }
 .container {
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
 }
 
@@ -55,7 +56,7 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  outline: 1px solid teal;
+  /* outline: 1px solid teal; */
 }
 
 /* HEADER */
@@ -64,7 +65,7 @@ img {
 }
 .header-container {
   display: flex;
-  outline: 2px solid #000;
+  /* outline: 2px solid #000; */
 }
 .header-left {
   display: flex;
@@ -189,9 +190,9 @@ img {
 
 /* -------BENEFITS------------ */
 
-.benefits-container {
+/* .benefits-container {
   outline: 1px solid black;
-}
+} */
 .benefits-list {
   display: flex;
 }
@@ -238,7 +239,7 @@ img {
 }
 .our-team-container {
   display: flex;
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
 }
 .our-team-list {
   display: flex;
@@ -254,7 +255,9 @@ img {
   margin-left: 30px;
 }
 .our-team-description {
-  padding: 30px 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  align-items: center;
 }
 .our-team-name {
   font-weight: 500;
@@ -272,9 +275,20 @@ img {
   margin-top: 10px;
 }
 
-/* SECOND PAGE */
+/* ---------SECOND PAGE -------------*/
 /* PORTFOLIO SECTION */
+
+.portfolio-nav-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
 .portfolio-button {
+  display: block;
+  margin-left: 8px;
+  padding: 6px 22px;
+  min-width: 73px;
   background-color: #f5f4fa;
   font-weight: 500;
   font-size: 16px;
@@ -283,6 +297,8 @@ img {
   letter-spacing: 0.03em;
   cursor: pointer;
   font-family: Roboto, sans-serif;
+  border-radius: 4px;
+  border: none;
 }
 .portfolio-button:hover,
 .portfolio-button:focus {
@@ -290,6 +306,7 @@ img {
   background-color: var(--accent-color);
 }
 .portfolio-title {
+  text-align: left;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -304,3 +321,28 @@ img {
 .portfolio-type {
   color: var(--main-color);
 }
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.portfolio-item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+  border: var(--border-color);
+}
+.portfolio-item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.portfolio-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: left;
+}
+/* .portfolio-description > .portfolio-title {
+  text-align: left;
+} */

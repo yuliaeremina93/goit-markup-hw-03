@@ -43,86 +43,111 @@
 <main>
 <section class="portfolio section">
     <h1 hidden>Портфолио</h1>
-    <ul class="list">
-        <li>
-            <button class="portfolio-button" type="button">Все</button>
-        </li>
-        <li>
-            <button class="portfolio-button" type="button">Веб-сайты</button>
-        </li>
-        <li>
-            <button class="portfolio-button" type="button">Приложения</button>
-        </li>
-        <li>
-            <button class="portfolio-button" type="button">Дизайн</button>
-        </li>
-        <li>
-            <button class="portfolio-button" type="button">Маркетинг</button>
-        </li>
-    </ul>
+    <div class="portfolio-nav-container">
+        <ul class="list portfolio-nav-list">
+            <li>
+                <button class="portfolio-button" type="button">Все</button>
+            </li>
+            <li>
+                <button class="portfolio-button" type="button">Веб-сайты</button>
+            </li>
+            <li>
+                <button class="portfolio-button" type="button">Приложения</button>
+            </li>
+            <li>
+                <button class="portfolio-button" type="button">Дизайн</button>
+            </li>
+            <li>
+                <button class="portfolio-button" type="button">Маркетинг</button>
+            </li>
+        </ul>
+    </div>
+    <div class="portfolio-main-container">
     <ul class="list portfolio-list">
-        <li>
-            <a class="link portfolio-link" href=""><img src="./images/portfolio1.jpg" width="370" height="294" alt="Экран ноутбука с сотрудниками">
-                <h2 class="title portfolio-title">Технокряк</h2>
-                <p class="portfolio-type">Веб-сайт</p>
-            </a>          
-        </li>
-        <li>
-            <a class="link portfolio-link" href=""><img src="./images/portfolio2.jpg" width="370" height="294" alt="Нарисованные баскетболисты">
+<li class="portfolio-item">
+    <a class="link portfolio-link" href=""><img src="./images/portfolio1.jpg" width="370" height="294"
+            alt="Экран ноутбука с сотрудниками">
+            <div class="portfolio-description">
+                    <h2 class="title portfolio-title">Технокряк</h2>
+                    <p class="portfolio-type">Веб-сайт</p>
+            </div>
+    </a>
+</li>
+<li class="portfolio-item">
+    <a class="link portfolio-link" href=""><img src="./images/portfolio2.jpg" width="370" height="294"
+            alt="Нарисованные баскетболисты">
+            <div class="portfolio-description">
                 <h2 class="title portfolio-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
                 <p class="portfolio-type">Дизайн</p>
-            </a>            
-        </li>
-        <li>
-            <a class="link portfolio-link" href="">
-                <img src="./images/portfolio3.jpg" width="370" height="294" alt="Эмблема ресторана с рыбой">
+            </div>
+    </a>
+</li>
+<li class="portfolio-item">
+    <a class="link portfolio-link" href="">
+        <img src="./images/portfolio3.jpg" width="370" height="294" alt="Эмблема ресторана с рыбой">
+        <div class="portfolio-description">
                 <h2 class="title portfolio-title">Ресторан <span lang="en">Seafood</span></h2>
                 <p class="portfolio-type">Приложение</p>
-            </a>          
-        </li>
-        <li>
-            <a class="link portfolio-link" href="">
-                <img src="./images/portfolio4.jpg" width="370" height="294" alt="Наушники">
+        </div>
+    </a>
+</li>
+<li class="portfolio-item">
+    <a class="link portfolio-link" href="">
+        <img src="./images/portfolio4.jpg" width="370" height="294" alt="Наушники">
+        <div class="portfolio-description">
                 <h2 class="title portfolio-title">Проект <span lang="en">Prime</span></h2>
                 <p class="portfolio-type">Маркетинг</p>
-            </a>          
-        </li>
-        <li>
-            <a class="link portfolio-link" href="">
-                <img src="./images/portfolio5.jpg" width="370" height="294" alt="Две коробки">
+        </div>
+    </a>
+</li>
+<li class="portfolio-item">
+    <a class="link portfolio-link" href="">
+        <img src="./images/portfolio5.jpg" width="370" height="294" alt="Две коробки">
+        <div class="portfolio-description">
                 <h2 class="title portfolio-title">Проект <span lang="en">Boxes</span></h2>
                 <p class="portfolio-type">Приложение</p>
-            </a>         
-        </li>
-        <li>
-            <a class="link portfolio-link" href="">
-                <img src="./images/portfolio6.jpg" width="370" height="294" alt="Экран компьютера">
+        </div>
+    </a>
+</li>
+<li class="portfolio-item">
+    <a class="link portfolio-link" href="">
+        <img src="./images/portfolio6.jpg" width="370" height="294" alt="Экран компьютера">
+        <div class="portfolio-description">
                 <h2 class="title portfolio-title" lang="en">Inspiration has no Borders</h2>
                 <p class="portfolio-type">Веб-сайт</p>
-            </a>          
-        </li>
-        <li>
-            <a class="link portfolio-link" href="">
-                <img src="./images/portfolio7.jpg" width="370" height="294" alt="Раскрытые страницы журнала">
+        </div>
+    </a>
+</li>
+<li class="portfolio-item">
+    <a class="link portfolio-link" href="">
+        <img src="./images/portfolio7.jpg" width="370" height="294" alt="Раскрытые страницы журнала">
+        <div class="portfolio-description">
                 <h2 class="title portfolio-title">Издание <span lang="en">Limited Edition</span></h2>
                 <p class="portfolio-type">Дизайн</p>
-            </a>            
-        </li>
-        <li>
-            <a class="link portfolio-link" href="">
-                <img src="./images/portfolio8.jpg" width="370" height="294" alt="Ярлык">
-                <h2 class="title portfolio-title">Проект <span lang="en">LAB</span></h2>
-                <p class="portfolio-type">Маркетинг</p>
-            </a>   
-        </li>
-        <li>
-            <a class="link portfolio-link" href="">
-                <img src="./images/portfolio9.jpg" width="370" height="294" alt="Печать на ноутбуке">
+        </div>
+    </a>
+</li>
+<li class="portfolio-item">
+    <a class="link portfolio-link" href="">
+        <img src="./images/portfolio8.jpg" width="370" height="294" alt="Ярлык">
+        <div class="portfolio-description">
+            <h2 class="title portfolio-title">Проект <span lang="en">LAB</span></h2>
+            <p class="portfolio-type">Маркетинг</p>
+        </div>
+    </a>
+</li>
+<li class="portfolio-item">
+    <a class="link portfolio-link" href="">
+        <img src="./images/portfolio9.jpg" width="370" height="294" alt="Печать на ноутбуке">
+        <div class="portfolio-description">
                 <h2 class="title portfolio-title" lang="en">Growing Business</h2>
                 <p class="portfolio-type">Приложение</p>
-            </a>           
-        </li>
-    </ul>
+        </div>
+    </a>
+</li>
+</ul>
+        </div>
+        
 </section>
         <footer class="footer-style">
             <div class="footer-logo">
