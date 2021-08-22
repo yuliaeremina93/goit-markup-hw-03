@@ -339,6 +339,7 @@ img {
   height: auto;
 }
 .portfolio-description {
+  padding-left: 24px;
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: left;
