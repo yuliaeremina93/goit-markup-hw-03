@@ -240,6 +240,9 @@ img {
 .our-team {
   background-color: #f5f4fa;
 }
+.our-team-title {
+  margin-bottom: 59px;
+}
 .our-team-container {
   display: flex;
   /* outline: 1px solid black; */
