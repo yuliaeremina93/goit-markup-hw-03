@@ -41,8 +41,8 @@ img {
 }
 .container {
   width: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin: 0 auto;
 }
 
@@ -80,9 +80,12 @@ img {
 .header-left {
   display: flex;
   align-items: center;
+}
+.header-container a {
   padding-top: 24px;
   padding-bottom: 24px;
 }
+
 .logo {
   letter-spacing: 0.03em;
   font-family: Raleway, sans-serif;
@@ -142,23 +145,27 @@ img {
 .footer-style {
   background-color: var(--background-color);
   border-top: 60px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-logo {
-  padding-top: 60px;
-}
+
 .logo-white {
   color: white;
 }
-.address-list {
-  margin-top: 20px;
+.footer-logo {
+  margin-bottom: 20px;
 }
-
+.address-address {
+  margin-bottom: 9px;
+}
 .address-address > .link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+}
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address-link {
   font-size: 14px;
@@ -172,7 +179,7 @@ img {
 .hero {
   background-color: var(--background-color);
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 .hero-title {
   color: #ffffff;
@@ -224,6 +231,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .benefits-item-text {
   font-size: 14px;
@@ -231,8 +239,12 @@ img {
   letter-spacing: 0.03em;
 }
 /* ---------WHAT ARE WE DOING----------- */
+.what-we-do {
+  padding-top: 0;
+}
+
 .what-we-do-title {
-  margin-bottom: 59px;
+  margin-bottom: 50px;
 }
 
 .what-we-do-list {
@@ -253,7 +265,7 @@ img {
   background-color: #f5f4fa;
 }
 .our-team-title {
-  margin-bottom: 59px;
+  margin-bottom: 50px;
 }
 .our-team-container {
   display: flex;
@@ -261,17 +273,17 @@ img {
 }
 .our-team-list {
   display: flex;
+  margin-left: -30px;
 }
 
 .our-team-item {
   flex-basis: calc(100% / 4 - 30px);
   /* width: 25%; */
   background-color: white;
+  margin-left: 30px;
   border-radius: 0px 0px 4px 4px;
 }
-.our-team-item:not(:first-child) {
-  margin-left: 30px;
-}
+
 .our-team-description {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -358,10 +370,7 @@ img {
 }
 .portfolio-description {
   padding-left: 24px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-align: left;
 }
-/* .portfolio-description > .portfolio-title {
-  text-align: left;
-} */
